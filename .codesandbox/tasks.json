@@ -1,0 +1,57 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "c",
+      "command": "corepack enable"
+    },
+    {
+      "name": "Install Dependencies",
+      "command": "yarn"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "build": {
+      "name": "build",
+      "command": "yarn build"
+    },
+    "dev": {
+      "name": "dev",
+      "command": "yarn dev",
+      "runAtStart": true,
+      "preview": {
+        "port": 5173
+      }
+    },
+    "lint": {
+      "name": "lint",
+      "command": "yarn lint"
+    },
+    "start": {
+      "name": "start",
+      "command": "yarn start"
+    },
+    "typecheck": {
+      "name": "typecheck",
+      "command": "yarn typecheck"
+    },
+    "test": {
+      "name": "test",
+      "command": "yarn test"
+    },
+    "coverage": {
+      "name": "coverage",
+      "command": "yarn coverage"
+    },
+    "e2e": {
+      "name": "e2e",
+      "command": "yarn e2e"
+    },
+    "e2e:ui": {
+      "name": "e2e:ui",
+      "command": "yarn e2e:ui"
+    }
+  }
+}
