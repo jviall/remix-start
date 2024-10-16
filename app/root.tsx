@@ -19,7 +19,6 @@ export const links: LinksFunction = () => [
 
 export function Layout({ children }: { children: React.ReactNode }) {
   const navigate = useNavigate();
-  const { pathname } = useLocation();
   return (
     <html lang="en">
       <head>
@@ -46,9 +45,15 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
+  const { pathname } = useLocation();
   return (
-    <div className="flex w-full h-full flex-col justify-center items-center gap-2 max-w-[400]">
+    <div className="flex w-full h-full flex-col ">
       <main>
+        <Tabs selectedKey={pathname} variant="bordered">
+          <Tab key="/one" href="/one" title="One" />
+          <Tab key="/two" href="/two" title="Two" />
+          <Tab key="/three" href="/three" title="Three" />
+        </Tabs>
         <Outlet />
       </main>
     </div>
