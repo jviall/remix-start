@@ -1,5 +1,3 @@
-![E2E Tests](https://github.com/jviall/njooi-takehome/actions/workflows/playwright.yml/badge.svg)
-
 # AQI Explorer
 
 ## Table Stakes
@@ -12,14 +10,6 @@ You need a couple basic things to get up and running:
 ```sh
 corepack enable
 ```
-
-3. A `.env` file in the root of the project directory containing an API token from [aqicn.org](https://aqicn.org/data-platform/token/), e.g.
-
-```
-AQI_TOKEN=[YOUR_TOKEN_HERE]
-```
-
-Then be on your merry way!
 
 ## Getting Started
 
